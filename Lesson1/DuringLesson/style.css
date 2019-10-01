@@ -1,0 +1,33 @@
+#redDIV {
+	margin-top: 200px; 
+	padding-top: 10px;
+	height: 100px;
+	width: 100px;
+	background-color: red; /* */
+}
+
+.RGBA {
+	height: 100px;
+	width: 100px;
+	background-color: rgba(0, 255, 0, 0.5);
+}
+
+.HEX {
+	height: 100px;
+	width: 100px;
+	background-color: #8793E8;
+}
+
+body{
+	background-image: url("Images/car3.jpg");
+	/*background-size: 100%;*/
+	background-repeat: no-repeat;
+}
+.text {
+	height: 100px;
+	width: 100px;
+}
+
+.text > p, h1  {
+	background-color: red;
+}
