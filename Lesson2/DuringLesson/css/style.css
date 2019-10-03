@@ -1,0 +1,46 @@
+div {
+	margin-top: 10px;
+	width: 100px;
+	height: 200px;
+	background-color: green;
+}
+div:nth-child(even) {
+	background-color: red;
+}
+.static{
+	position: static;
+}
+
+.relative{
+	position: relative;
+	/*margin-top: 20px;*/
+}
+
+.static, .relative{
+	
+	left: 10px;
+	/*top: 10px;*/
+}
+
+.sticky{
+	position: sticky;
+	left: 200px;
+	top: 10px;
+}
+
+.fixed{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+
+}
+.absolute{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: pink;
+	margin-top: 0px;
+	top: 50%;
+	left: 10px;
+	
+}
