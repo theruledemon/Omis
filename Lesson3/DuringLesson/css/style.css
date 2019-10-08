@@ -1,0 +1,23 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	width: 150px;
+	background-color: yellow;
+}
+
+li a {
+	display: block;
+	color: black;
+	padding: 8px 16px;
+}
+
+li a:hover {
+	background-color: red;
+	color: yellow;
+}
+
+.active {
+	background-color: green;
+	color: red;
+}

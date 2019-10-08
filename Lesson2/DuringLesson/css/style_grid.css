@@ -9,15 +9,29 @@
     grid-column-end: 3;
 }*/
 
+
 .header {
 	background-color: red;
 	grid-area: header;
 }
 
+.header h1{
+	color: white;
+}
+
+.header div {
+	float: left;
+}
+
+img{
+	width: 100px;
+	height: 100px;
+}
+
 .banner {
 	background-color: pink;
 	grid-area: banner;
-	
+	z-index: 1;
 }
 
 .sidemenu {
@@ -25,11 +39,22 @@
 	background-color: green;
 	height: 200px;
 }
+.sidemenu2 {
+	grid-area: sidemenu2;
+	background-color: green;
+	height: 200px;
+}
 
 .content {
-	position: relative;
 	grid-area: content;
 	background-color: blue;
+	
+}
+
+.footer {
+	background-color: pink;
+	grid-area: footer;
+	
 }
 
 .wrapper {
@@ -38,8 +63,41 @@
     grid-template-areas: 
 	'header header header' 
 	'banner banner banner' 
-	'sidemenu content content' ;
+	'sidemenu content sidemenu2'
+	'footer footer footer' 	;
 }
+
+.cell1{
+	grid-area: cell1;
+	background-color: white;
+}
+
+.cell2{
+	grid-area: cell2;
+	background-color: green;
+}
+
+.cell3{
+	grid-area: cell3;
+	background-color: white;
+}
+
+.cell4{
+	grid-area: cell4;
+	background-color: green;
+}
+
+.cell5{
+	grid-area: cell4;
+	background-color: white;
+}
+
+.2x3wrap{
+	display: grid;
+  grid-template-columns: 20% auto 20%;
+  grid-gap: 5px;
+}
+
 
 .sticky{
 	position: sticky;
@@ -53,5 +111,29 @@
 	width: 10px;
 	top: 50%;
 	left: 50%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	width: 150px;
+	background-color: yellow;
+}
+
+li a {
+	display: block;
+	color: black;
+	padding: 8px 16px;
+}
+
+li a:hover {
+	background-color: red;
+	color: yellow;
+}
+
+.active {
+	background-color: green;
+	color: red;
 }
 
