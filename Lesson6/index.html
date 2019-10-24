@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Login</title>
+	</head>
+	<body>
+		<h2>Basic</h2>
+		<form action="formData.php" method="get">
+			Name: <input type="text" name="username"><br>
+			Choice: <input type="number" name="number"><br>
+			<input type="submit">
+		</form>
+		
+		<h2>Math</h2>
+		<form action="formData.php" method="get">
+			Num1: <input type="number" name="number1"><br>
+			Num2: <input type="number" name="number2"><br>
+			<input type="radio" name="function" value="+" >Add<br>
+			<input type="radio" name="function" value="-" >Sub<br>
+			<input type="submit">
+		</form>
+		
+		<h2>Array</h2>
+		<form action="formData.php" method="get">
+			Choose a car:<br>
+			<input style="margin-left: 80px" type="checkbox" name="cars[]" value="Audi">Audi<br>
+			<input style="margin-left: 80px" type="checkbox" name="cars[]" value="BMW">BMW<br>
+			<input style="margin-left: 80px" type="checkbox" name="cars[]" value="Volkswagen">Volkswagen<br>
+			<input style="margin-left: 80px" type="checkbox" name="cars[]" value="Mazda">Mazda<br>
+			<input type="submit">
+		</form>
+		
+		<h2>Files</h2>
+		<form action="formData.php" method="get">
+			<input type="text" name="content"><br>
+			<input type="radio" name="editType" value="write" >Write<br>
+			<input type="radio" name="editType" value="append" >Append<br>
+			<input type="radio" name="editType" value="read" >Read<br>
+			<input type="submit"><br>
+		</form>
+		
+	</body>
+</html>
