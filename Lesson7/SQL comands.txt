@@ -1,0 +1,31 @@
+// Crete DATABASE
+CREATE DATABASE [NAME];
+
+// DELETE DATABASE
+DROP DATABASE [NAME]
+
+// CREATE TABEL
+CREATE TABLE [NAME](col1 type, col2 type......)
+
+// DELETE TABLE
+DROP TABLE [NAME]
+
+// Add row
+INSERT INTO [NAME](col1, col2, col3,......)
+values (val1, val2, val3)
+
+//Show table data
+SELECT [cols] FROM [NAME]
+
+// Add new column
+ALTER TABLE [NAME] ADD [COL_NAME] type
+
+// Delete row
+DELETE FROM [NAME] WHERE [condition]
+
+// Delete column
+ALETR TABLE [NAME] DROP COLUMN [Col_Name]
+
+// Update row
+UPDATE [NAME] SET [colName] = [colVal] where [condition]
+
