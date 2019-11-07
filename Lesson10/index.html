@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>New</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="div1"></div>
+			<div class="div2">
+				<div class="sidenav">
+				  <a onclick="changeStory()">About</a>
+				  <a onclick="changeSite('service.html')">Services</a>
+				  <a onclick="hideStory()">Clients</a>
+				  <a>Contact</a>
+				</div>
+			</div>
+			<div class="div3">
+				<p id="story" onmouseover="red(this)" onmouseout="regular(this)">asd</p>
+				<select onchange="newStory(this.value)">
+					<option value="Audi">Audi</option>
+					<option value="BMW">BMW</option>
+				</select>
+				<br>
+				<input type="text" onchange="newStory(this.value)">
+				<button id="trigger">Get PHP</button>
+			</div>
+		</div>
+	</body>
+</html>
