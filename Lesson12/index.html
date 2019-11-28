@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="customStyle.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container-fluid container-md">
+			<div class="row">
+				<div class="col customHeader">
+					Header
+				</div>
+			</div>
+			<div class="row customSideMenu">
+				<div class="col-3">
+					<div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+						 <a href="/OMIS/Lesson12/" class="btn btn-primary active">Home</a>
+						 <a href="/OMIS/Lesson12/aboutus.html" class="btn btn-primary">About us</a>
+						 <a href="/OMIS/Lesson12/addData.html" class="btn btn-primary">Add Data</a>
+						 <div class="btn-group dropright" role="group">
+							 <button id="btnPictures" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Pictures
+							 </button>
+							 <div class="dropdown-menu" aria-labelledby="btnPictures">
+								<a href="#" class="dropdown-item">Picture 1</a>
+								<a href="/OMIS/Lesson11/images/Cybertruck-4.jpg" class="dropdown-item">Picture 2</a>
+							 </div>
+						 </div>
+						 
+						 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#PicturesV2" aria-expanded="false" aria-controls="PicturesV2">	
+							PicturesV2 <span class="badge badge-primary">&#8681</span>
+						 </button>
+						 <div class="collapse btn-group-vertical" id="PicturesV2">
+							<a href="#" class="btn btn-secondary">PictureV2 1</a>
+							<a href="#" class="btn btn-secondary">PictureV2 2</a>
+						 </div>
+						 <a href="#" class="btn btn-primary">Contact</a>
+					</div>
+				</div>
+				<div class="col-7">
+					<form action="filter.php" method="get">
+						StartDate: <input class="form-control" type="datetime-local" name="startDate" required><br>
+						EndDate: <input class="form-control" type="datetime-local" name="endDate" required><br>
+						<input class="btn btn-info" type="submit">
+					</form>
+				</div>
+				<div class="col">
+					RightSide
+				</div>
+			</div>
+			<div class="row customFooter">
+				<div class="col">
+					Footer
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
